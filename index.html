@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="page-content">
+		<div class="wizard-heading">Register</div>
+		<div class="wizard-v6-content">
+			<div class="wizard-form">
+		        <form class="form-register" id="form-register" action="#" method="post">
+		        	<div id="form-total">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<p class="step-icon"><span>1</span></p>
+			            	<span class="step-text">About Yourself</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="form-heading">
+			                		<h3>Basic Info</h3>
+			                		<span></span>
+			                	</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="first_name" name="first_name" required>
+											<span class="label">First Name</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="last_name" name="last_name" required>
+											<span class="label">Last Name</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="tel" class="form-control" id="phone" name="phone" required>
+											<span class="label">Phone Number</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="email" id="your-mail" class="form-control"  required>
+											<span class="label">E-Mail</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row form-row-date">
+									<div class="form-holder form-holder-2">
+										<input type="date" id="dob">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder" style="margin-top:80px;">
+										<input type="file" id="pic" class="profilepic" name="profile pic" onchange="updateImageDisplay()">
+
+										<span style="font-size:12px;"><b>Note:</b>*Resolution should be b/w 400 to 800 px and size b/w 60Kb to 200 Kb.</span>
+									</div>
+									<div class="form-holder">
+										<div class="display-file"></div>
+									</div>
+								</div>
+							</div>
+						</section>
+						
+						<!-- Section 2 -->
+
+						<h2>
+			            	<p class="step-icon"><span>2</span></p>
+			            	<span class="step-text">Contact Info</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="form-heading">
+			                		<h3>Address</h3>
+			                		<span></span>
+			                	</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="mail" name="address" required>
+											<span class="label">Mail-Address</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="mail2" name="address" required>
+											<span class="label">Address line 2</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row form-row-date">
+									<div class="form-holder form-holder-2">
+										<label for="date" class="special-label">State:</label>
+										<select name="state" id="state" class="form-control">
+											<option value="state" selected>State</option>
+															<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+															<option value="Andhra Pradesh">Andhra Pradesh</option>
+															<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+															<option value="Assam">Assam</option>
+															<option value="Bihar">Bihar</option>
+															<option value="Chandigarh">Chandigarh</option>
+															<option value="Chattisgarh">Chattisgarh</option>
+															<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+															<option value="Daman and Diu">Daman and Diu</option>
+															<option value="Delhi">Delhi</option>
+															<option value="Goa">Goa</option>
+															<option value="Gujarat">Gujarat</option>
+															<option value="Haryana">Haryana</option>
+															<option value="Himachal Pradesh">Himachal Pradesh</option>
+															<option value="Jammu and Kashmir ">Jammu and Kashmir</option>
+															<option value="Jharkhand">Jharkhand</option>
+															<option value="Karnataka">Karnataka</option>
+															<option value="Kerala">Kerala</option>
+															<option value="Lakshadweep">Lakshadweep</option>
+															<option value="Madhya Pradesh">Madhya Pradesh</option>
+															<option value="Maharashtra">Maharashtra</option>
+															<option value="Manipur">Manipur</option>
+															<option value="Meghalaya">Meghalaya</option>
+															<option value="Mizoram">Mizoram</option>
+															<option value="Nagaland">Nagaland</option>
+															<option value="Orissa">Orissa</option>
+															<option value="Pondicherry">Pondicherry</option>
+															<option value="Punjab">Punjab</option>
+															<option value="Rajasthan">Rajasthan</option>
+															<option value="Sikkim">Sikkim</option>
+															<option value="Tamil Nadu">Tamil Nadu</option>
+															<option value="Telangana">Telangana</option>
+															<option value="Tripura">Tripura</option>
+															<option value="Uttar Pradesh">Uttar Pradesh</option>
+															<option value="Uttarakhand">Uttarakhand</option>
+															<option value="West Bengal">West Bengal</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control"id="city" name="mail-address" required>
+											<span class="label">City</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control"id="zip" name="mail-address" required>
+											<span class="label">Zip-pin</span>
+										</label>
+									</div>
+								</div>
+							</div>
+			                <div class="inner">
+
+								<h3 style="color:white;">Permanenet Address</h3>
+								<input type="checkbox" id="check" onchange="copyAdd()">Same As Mail-Address
+								<div class="form-row" style="margin-top:5%;">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="padd" name="address">
+											<span class="label">Mail-Address</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="padd2" name="address" >
+											<span class="label">Address line 2</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row form-row-date">
+									<div class="form-holder form-holder-2">
+										<label for="date" class="special-label">State:</label>
+										<select name="state" id="state2" class="form-control">
+											<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+															<option value="Andhra Pradesh">Andhra Pradesh</option>
+															<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+															<option value="Assam">Assam</option>
+															<option value="Bihar">Bihar</option>
+															<option value="Chandigarh">Chandigarh</option>
+															<option value="Chattisgarh">Chattisgarh</option>
+															<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+															<option value="Daman and Diu">Daman and Diu</option>
+															<option value="Delhi">Delhi</option>
+															<option value="Goa">Goa</option>
+															<option value="Gujarat">Gujarat</option>
+															<option value="Haryana">Haryana</option>
+															<option value="Himachal Pradesh">Himachal Pradesh</option>
+															<option value="Jammu and Kashmir ">Jammu and Kashmir</option>
+															<option value="Jharkhand">Jharkhand</option>
+															<option value="Karnataka">Karnataka</option>
+															<option value="Kerala">Kerala</option>
+															<option value="Lakshadweep">Lakshadweep</option>
+															<option value="Madhya Pradesh">Madhya Pradesh</option>
+															<option value="Maharashtra">Maharashtra</option>
+															<option value="Manipur">Manipur</option>
+															<option value="Meghalaya">Meghalaya</option>
+															<option value="Mizoram">Mizoram</option>
+															<option value="Nagaland">Nagaland</option>
+															<option value="Orissa">Orissa</option>
+															<option value="Pondicherry">Pondicherry</option>
+															<option value="Punjab">Punjab</option>
+															<option value="Rajasthan">Rajasthan</option>
+															<option value="Sikkim">Sikkim</option>
+															<option value="Tamil Nadu">Tamil Nadu</option>
+															<option value="Telangana">Telangana</option>
+															<option value="Tripura">Tripura</option>
+															<option value="Uttar Pradesh">Uttar Pradesh</option>
+															<option value="Uttarakhand">Uttarakhand</option>
+															<option value="West Bengal">West Bengal</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control"id="city2" name="mail-address">
+											<span class="label">City</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control"id="zip2" name="mail-address">
+											<span class="label">Zip-pin</span>
+										</label>
+									</div>
+								</div>
+							</div>
+			            </section>
+						<!-- SECTION 3 -->
+			            <h2>
+			            	<p class="step-icon"><span>3</span></p>
+			            	<span class="step-text">Education</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="form-heading">
+			                		<h3>Education Infomation</h3>
+			                		<span></span>
+			                	</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="room" class="special-label-1">Higher Education</label>
+										<select name="room" id="edu" class="form-control">
+											<option value="M.tech" selected>M.tech</option>
+											<option value="B.tech">B.tech</option>
+											<option value="BCA">BCA</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<label for="time" class="special-label-1">Skill</label>
+										<select name="time" id="skill" class="form-control">
+											<option value="Core java" selected>Corejava</option>
+											<option value="Css">Css</option>
+											<option value="Java script">Java script</option>
+											<option value="HTML">HTML</option>
+										</select>
+
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<h3 style="color:white;">Resume</h3>
+										<input type="file">
+									</div>
+									<div class="form-holder">
+										<h3 style="color:white;">Education Docs</h3>
+										<input type="file" multiple>
+									</div>
+										
+								</div>
+							</div>
+			            </section>
+			            <!-- SECTION 4 -->
+			            <h2>
+			            	<p class="step-icon"><span>4</span></p>
+			            	<span class="step-text">Preview</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="form-heading">
+			                		<h3>Confirmation</h3>
+			                		<span></span>
+			                	</div>
+								<div class="table-responsive">
+									<table class="table">
+											<tr class="space-row">
+												<th>Picture</th>
+												<td id="picinpreview"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Full Name:</th>
+												<td id="fullname-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>DOB:</th>
+												<td id="DOB"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Phone Number</th>
+												<td id="phone-num"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Email:</th>
+												<td id="mail-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Mail-Address:</th>
+												<td id="addr-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Permanent-Address:</th>
+												<td id="addr2-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Education:</th>
+												<td id="edu-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Skill:</th>
+												<td id="skill-val"></td>
+											</tr>
+											
+									</table>
+								</div>
+							</div>
+			            </section>
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	
+	<script src="js/main.js"></script>
+	<script>
+
+		
+	function updateImageDisplay() {
+
+const input = document.getElementById('pic');
+const preview = document.querySelector('.display-file');
+const picinpreview = document.getElementById('picinpreview');
+while(preview.firstChild) {
+preview.removeChild(preview.firstChild);
+}
+preview.style.backgroundColor = "none";
+const curFiles = input.files;
+const file = curFiles.item(0);
+if (file.size >= (200*1024)) {
+alert(
+"File too Big, please select a file less than 200KB");
+input.value = "";
+} else if (file.size < (60 * 1024)) {
+alert(
+"File too small, please select a file greater than 60KB");
+input.value = "";
+} else {
+const image = document.createElement('img');
+const image2 = document.createElement('img');
+
+
+image.src = URL.createObjectURL(file);
+image2.src = URL.createObjectURL(file);
+var reader = new FileReader(); // CREATE AN NEW INSTANCE.
+
+reader.onload = function (e) {
+var img = new Image();
+img.src = e.target.result;
+
+img.onload = function () {
+var w = this.width;
+var h = this.height;
+		if( h > 800 || w > 800 ){
+			alert("File resolution too big");
+			input.value = "";
+		}else if(h < 400 || w < 400 ){
+			alert("File resolution too small");
+}else{
+		image.height = 210;
+		image2.height = 210;
+
+		preview.appendChild(image);
+		picinpreview.appendChild(image2);
+
+}
+
+}
+};
+reader.readAsDataURL(file);
+
+}
+}
+
+function copyAdd(){
+	var a = document.getElementById('mail').value;
+	document.getElementById('padd').value = a;
+	var b = document.getElementById('mail2').value;
+	document.getElementById('padd2').value = b;
+	var c = document.getElementById('state').value;
+	document.getElementById('state2').value = c;
+	var d = document.getElementById('city').value;
+	document.getElementById('city2').value = d;
+	var e = document.getElementById('zip').value;
+	document.getElementById('zip2').value = e;
+
+
+}
+	</script>
+
+</body>
+</html>
